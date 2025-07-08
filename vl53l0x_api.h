@@ -11,6 +11,9 @@ extern "C" {
 // Initialize the device
 VL53L0X_Error VL53L0X_InitDevice(VL53L0X_Dev_t *pdev);
 
+// Set the device I2C address
+VL53L0X_Error VL53L0X_SetDeviceAddress(VL53L0X_Dev_t *pdev, uint8_t new_address);
+
 // Start continuous ranging
 VL53L0X_Error VL53L0X_StartRanging(VL53L0X_Dev_t *pdev);
 
